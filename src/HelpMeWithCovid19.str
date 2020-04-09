@@ -1,0 +1,42 @@
+{
+// Comment
+
+AgeValidator = 38;
+YourAge 48
+Country "USA"
+State "Washington"
+
+//enum property
+Gender Male
+
+userHealth uDataHealth{
+Diabetic
+High_Blood_Pressure
+Asthma
+}
+
+userSymptoms uDataSymptoms{
+Cough
+Fever
+Shortness_Of_Breath
+}
+
+userTravels uDataTravels{
+USA
+China
+Italy
+}
+
+HelpMeWithCovid19 uDataTravels;
+HelpMeWithCovid19 uDataSymptoms;
+HelpMeWithCovid19 uDataHealth;
+
+ConsoleLog("Please be patient, as API in use may have an increased latency!!!");
+
+{
+x = 10;
+if AgeValidator < 100 doThis
+    while x > 0 runThis { ConsoleLog("Executing, please wait... ", x, "\n"); x = x -1; }
+}
+
+}

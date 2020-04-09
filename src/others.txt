@@ -1,0 +1,138 @@
+getting the str file working now but do  consider .str file being able to trigger more actions in .art
+
+
+// user_Asks_The_Questions.Comment_Them_Out_If_You_Dont_Want_It_To_Be_Printed_Or_Shown_In_The_GUI.
+These are the type of questions tba
+
+AmISafeFromTheInfection?
+WhatShouldIDo?
+DeathsInUKSoFar?
+CasesInUKSoFar?
+WorstAffectedState?
+LeaseAffectedState?
+
+
+change the name of ab.bat to helpmewithcovid like
+
+for spaced out state include a hex char e.g. %20%
+
+Country = USA;
+State = Washington;
+Gender = Male;
+
+; strVariables.put(Country1.v,STRING_DQ1.v)
+
+need to add comments
+
+
+ShowGuiAndData ::= 'ShowGuiAndData' STRING_DQ {CovidMain.calculateAndShowGui(STRING_DQ1.v);}
+
+Need to try and get the gender working by enums, for now will just do string. Gender Male
+
+
+ShowGuiAndData State;
+
+Gender <v:GenderEnums>::= # { Gender.v = GenderEnums.NONE; } |
+                             'Male' { Gender.v = GenderEnums.MALE; } | 'Female' { Gender.v = GenderEnums.FEMALE; } |
+                             'Transgender' { Gender.v = GenderEnums.TRANSGENDER; }
+
+Gender |
+
+Comment ::= '//' STRING_DQ { artText.printf("%s", STRING_DQ1.v); }
+
+
+              'userTravels' ID singleStatement< { userTravelsData.put(ID1.v, singleStatement.singleStatement1); } |
+
+              'HelpMeWithCovid19' ID ';'
+                { if (!userTravelsData.containsKey(ID1.v))
+                    artText.println(ARTTextLevel.WARNING, "Hmm... You've called an 3 undefined property: " + ID1.v);
+                  else
+                    artEvaluate(userTravelsData.get(ID1.v), null);
+                } |
+
+
+              'HelpMeWithCovid19' ID ';'
+                { if (!userData.containsKey(ID1.v))
+                    artText.println(ARTTextLevel.WARNING, "Hmm... You've called an 2 undefined property : " + ID1.v);
+                  else
+                    artText.printf("%s", "222222");
+                    artEvaluate(userData.get(ID1.v), null);
+                } |
+
+
+              'HelpMeWithCovid19' ID ';'
+                { if (!userData.containsKey(ID1.v))
+                    artText.println(ARTTextLevel.WARNING, "Hmm... You've called an 1 undefined property: " + ID1.v);
+                  else
+                    artText.printf("%s", "1111111");
+                    artEvaluate(userData.get(ID1.v), null);
+                } |
+
+Only need to set it for the 3 ds since thats whwere the data need to be evaliated by art. Rest are directly assigned
+
+
+             subCall2 STRING_DQ Health { cM.setUserHealth(Health1.v); } |
+             subCall3 STRING_DQ Symptoms { cM.setUserSymptoms(Symptoms1.v); } |
+             subCall4 STRING_DQ Travels { cM.setUserTravels(Travels1.v); }
+
+
+subCall1<leftExtent:int rightExtent:int v:String> ::= genderType { subCall1.v = artLexeme(subCall1.leftExtent, subCall1.rightExtent).trim(); }
+
+subCall2<leftExtent:int rightExtent:int v:String> ::= Symptoms { subCall2.v = artLexeme(subCall2.leftExtent, subCall2.rightExtent).trim(); }
+
+subCall3<leftExtent:int rightExtent:int v:String> ::= Travels { subCall3.v = artLexeme(subCall3.leftExtent, subCall3.rightExtent).trim(); }
+
+subCall4<leftExtent:int rightExtent:int v:String> ::= Travels { subCall4.v = artLexeme(subCall4.leftExtent, subCall4.rightExtent).trim(); }
+
+
+subCall1<leftExtent:int rightExtent:int v:String> ::= genderType { subCall1.v = artLexeme(subCall1.leftExtent, subCall1.rightExtent).trim(); }
+
+
+|
+             subCall3 shifters Symptoms { cM.setUserSymptoms(Symptoms1.v); } |
+             subCall4 shifters Travels { cM.setUserTravels(Travels1.v); }
+
+
+
+
+subCall2<leftExtent:int rightExtent:int v:String> ::= Health { subCall2.v = artLexeme(subCall2.leftExtent, subCall2.rightExtent).trim(); }
+
+subCall3<leftExtent:int rightExtent:int v:String> ::= Symptoms { subCall3.v = artLexeme(subCall3.leftExtent, subCall3.rightExtent).trim(); }
+
+subCall4<leftExtent:int rightExtent:int v:String> ::= Travels { subCall4.v = artLexeme(subCall4.leftExtent, subCall4.rightExtent).trim(); }
+
+shifters <v:int> ::= '-' {shifters.v = + 1;} | (* shifts the string to extract the right char of the substring *)
+                    '-' shifters {shifters.v = shifters1.v + 1; }   (*use this as dash, so i move by 1 to extract the string data *)
+
+|
+              subCall2 SymptomsType { cM.setSymptoms(SymptomsType1.v); } |
+              subCall3 TravelsType { cM.setTravels(TravelsType1.v); }
+
+
+
+userSymptoms uDataSymptoms{
+Cough
+Fever
+Loss_of_Breath
+}
+
+userTravels uDataTravels{
+USA
+Chad
+Italy
+}
+
+HelpMeWithCovid19 uDataSymptoms;
+HelpMeWithCovid19 uDataTravels;
+
+              'userSymptoms' ID singleStatement< { userData.put(ID1.v, singleStatement.singleStatement1); } |
+
+              'userTravels' ID singleStatement< { userData.put(ID1.v, singleStatement.singleStatement1); } |
+
+'userSymptoms' ID singleStatement< { userData.put(ID1.v, singleStatement.singleStatement1); } |
+
+'userTravels' ID singleStatement< { userData.put(ID1.v, singleStatement.singleStatement1); } |
+
+|
+              subCall2 SymptomsType { cM.setSymptoms(SymptomsType1.v); } |
+              subCall3 TravelsType { cM.setTravels(TravelsType1.v); }

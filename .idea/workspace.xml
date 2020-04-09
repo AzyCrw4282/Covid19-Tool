@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6b52c88-e7af-47b4-b0c0-f3ae366efa97" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZoXRrdJuHDv61fTtdDtVF4RIQ3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../FLP" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6b52c88-e7af-47b4-b0c0-f3ae366efa97" name="Default Changelist" comment="" />
+      <created>1585506414297</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585506414297</updated>
+      <workItem from="1585506415672" duration="2682000" />
+      <workItem from="1585509439733" duration="533000" />
+      <workItem from="1586033684120" duration="15000" />
+      <workItem from="1586307032845" duration="2789000" />
+      <workItem from="1586310015076" duration="57000" />
+      <workItem from="1586401779347" duration="308000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2344" y="461" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585506936541">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2344" y="461" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1585506936541" />
+    <state x="1145" y="295" key="FileChooserDialogImpl" timestamp="1586033694789">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1145" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1586033694789" />
+    <state x="925" y="279" key="IDE.errors.dialog" timestamp="1586309331112">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="925" y="279" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1586309331112" />
+    <state x="1063" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1586310054047">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1063" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1586310054047" />
+    <state x="2836" y="125" width="727" height="795" key="dock-window-1" timestamp="1585509090427">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2836" y="125" width="727" height="795" key="dock-window-1/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1585509090427" />
+  </component>
+</project>
