@@ -1,4 +1,4 @@
-**Background- Simply a tool to query the status of COVID19** 
+### Background- Simply a tool to query the status of COVID19** 
 
 I wanted to make something interesting, and so the only idea came to me was to make something related to the ongoing pandemic.
 So I've gone ahead and built a COVID19 tool that shows the infected/casualties/recovered around the world in real-time using the public API by John Hopkins University.
@@ -19,9 +19,11 @@ Add/remove your latest travels
 --For the  last 3 points above make sure that they are defined in the grammer file ( HelpMeWithCovid19.art )
 
 **Requirements**
-
+```
 --Java 11 ( I used jdk-11.0.2)
 
+#### Please note - to run this, it requires a .jar file which I am not able to include to licensing issues. I maybe able to share valid reasons.  
+```
 Relevant Files
 
 HelpMeWithCovid19.art 
@@ -34,7 +36,7 @@ Java files: CovidMain is the main class. All other classes in the src dir are al
 
 All libraries are in the lib folder and I have correctly set their classpath in the bat script
 
-###Language specificaiton
+### Language specificaiton
 ```aidl
 {
 // Comment
