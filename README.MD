@@ -22,7 +22,7 @@ Add/remove your latest travels
 ```
 --Java 11 ( I used jdk-11.0.2)
 
-#### Please note - to run this, it requires a .jar file which I am not able to include to licensing issues. I maybe able to share valid reasons.  
+#### Please note - to run this, it requires a .jar file which I am not able to include due to licensing issues. I maybe able to share for valid reasons.  
 ```
 Relevant Files
 
