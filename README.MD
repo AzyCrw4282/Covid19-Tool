@@ -1,5 +1,7 @@
 ### Background- Simply a tool to query the status of COVID19 using my own Grammar, Lexer and builtin Parsers** 
 
+This was done as an assignment for a university project, by using builtin lexers and parsers given to us. My work contains the language specificaiton and grammars that I've defined. Read more to find the relevant contents.
+
 I wanted to make something interesting, and so the only idea came to me was to make something related to the ongoing pandemic.
 So I've gone ahead and built a COVID19 tool that shows the infected/casualties/recovered around the world in real-time using the public API by John Hopkins University.
 
