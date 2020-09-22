@@ -38,7 +38,7 @@ Java files: CovidMain is the main class. All other classes in the src dir are al
 
 All libraries are in the lib folder and I have correctly set their classpath in the bat script
 
-### Language specificaiton
+### Sample Language specificaiton (i.e. what the code looks like)
 ```aidl
 {
 // Comment
