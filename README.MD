@@ -1,4 +1,4 @@
-### Background- Simply a tool to query the status of COVID19 using my own Grammar, Lexer and builtin Parsers** 
+### Background- Simply a tool to query the status of COVID19 ** 
 
 This was done as an assignment for a university project, by using builtin lexers and parsers given to us. My work contains the language specificaiton and grammars that I've defined. Read more to find the relevant contents.
 
